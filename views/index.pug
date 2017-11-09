@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    .jumbotron
+      .row
+        .logo-wild.text-center.col-xs-12
+          .options-home
+            img(src='images/logo_orange_pastille.png', alt='', height='100')
+      .row
+        .anniversaire.text-center.col-xs-12
+          .options-home
+            a(href='/birthday')
+              button
+                span FÊTER UN ANNIVERSAIRE
+      .row
+        .sortir.text-center.col-xs-12
+          .options-home
+            a(href='/adresse')
+              button SORTIR
+      .row
+        .col-xs-4.col-xs-offset-5
+          button
+            | Inscription

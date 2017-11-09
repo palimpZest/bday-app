@@ -1,0 +1,333 @@
+@-webkit-keyframes background {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes background {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes background {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 50px;
+  height: 1vw;
+  background: linear-gradient(270deg, #ff003b,#a716ef, #1661ef);
+  background-size: 600% 600%;
+  -webkit-animation: background 22s ease infinite;
+  -moz-animation: background 22s ease infinite;
+  animation: background 22s ease infinite;
+}
+
+
+.jumbotron {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 1px ;
+}
+
+
+/* CLASSES INDEX */
+
+.anniversaire button{
+  border-radius: 10px;
+  margin-bottom: 10%;
+  font-weight: 500;
+  font-size: 3em;
+  width:500px;
+  height: 150px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 20 0;
+  background-clip: border-box;
+}
+
+.button span{
+background-clip: content-box;
+color: transparent;
+
+}
+
+.logo-wild {
+  margin-bottom: 20px
+}
+
+.sortir button {
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 3em;
+  width:500px;
+  height: 150px;
+  color: black;
+  background: white;
+  border: none;
+}
+
+.bloc-reponse{
+ margin-top: 200px;
+  font-size: 3em;
+  width:500px;
+  height: 150px;
+  background: white;
+  color: blue;
+  border: none;
+  padding: 20 0;
+}
+
+/* CLASSES ADRESSE */
+
+.bloc1 {
+  border-radius: 10px;
+  margin-bottom: 10%;
+  font-weight: 500;
+  font-size: 3em;
+  width:500px;
+  height: 150px;
+  line-height: 150px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 20 0;
+}
+
+.textbloc1{
+  text-align: center;
+}
+
+
+.bloc-arrondissement {
+  line-height: 150px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 3em;
+  width:500px;
+  height: 150px;
+  color: black;
+  background: white;
+  border: none;
+}
+
+.input-arrondissement {
+  line-height: 150px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 3em;
+  width:500px;
+  height: 70px;
+  color: black;
+  background:transparent;
+  border: none;
+}
+
+
+.input-arrondissement::placeholder {
+  color: red;
+}
+
+
+/* CLASSES BIRTHDAY */
+
+.bloc-devine {
+  border-radius: 10px;
+  margin-bottom: 10%;
+  font-weight: 500;
+  font-size: 2em;
+  width:500px;
+  height: 150px;
+  line-height: 75px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 20 0;
+}
+
+.textbloc1{
+  text-align: center;
+}
+
+
+.bloc-arrondissement {
+  line-height: 150px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 3em;
+  width:500px;
+  height: 150px;
+  color: black;
+  background: white;
+  border: none;
+}
+
+.input-birthday {
+  background-color: white;
+  border-radius: 10px;
+  background: white;
+  border: none;
+  height: 70px;
+}
+
+
+
+/* CLASSES BIRTHDAY-RESULT */
+
+.bloc-reponse {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 2em;
+  width:400px;
+  height: 100px;
+  line-height: 75px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 20 0;
+}
+
+.bloc-nom {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  margin-top: -100px;
+  font-weight: 500;
+  font-size: 2em;
+  width:400px;
+  height: 100px;
+  line-height: 75px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 20 0;
+}
+
+.gif{
+
+margin-top: -70px;
+
+
+
+}
+.textbloc1{
+  text-align: center;
+}
+
+
+.bloc-arrondissement {
+  line-height: 150px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 3em;
+  width:500px;
+  height: 150px;
+  color: black;
+  background: white;
+  border: none;
+}
+
+.input-birthday {
+  background-color: white;
+  border-radius: 10px;
+  background: white;
+  border: none;
+  height: 70px;
+}
+
+
+
+
+/* CLASSES BIRTHDAY-RESULT */
+
+.nom-personne {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 2em;
+  width:400px;
+  height: 100px;
+  line-height: 35px;
+  background: transparent;
+  color: black;
+  border: none;
+  padding: 20 0;
+}
+
+.bloc-nom {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  margin-top: -100px;
+  font-weight: 500;
+  font-size: 2em;
+  width:400px;
+  height: 100px;
+  line-height: 75px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 20 0;
+}
+
+
+
+
+
+.bloc-arrondissement {
+  line-height: 150px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 3em;
+  width:500px;
+  height: 150px;
+  color: black;
+  background: white;
+  border: none;
+}
+
+.input-birthday {
+  background: transparent;
+  border-radius: 10px;
+  border: none;
+  height: 70px;
+}
+
+
+
+ *
+ * Navigation
+ *
+ */
+
+
+/*
+ *
+ * Header
+ *
+ */
+
+
+/*
+ *
+ * Welcome Section
+ *
+ */
+
+
+ /*
+ *
+ *  Footer
+ *
+ */

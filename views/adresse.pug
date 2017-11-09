@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  .jumbotron
+    .row
+      .bloc1.text-center.col-xs-12
+        .textbloc1
+          span Qui habite dans le
+    .row
+      .container.col-xs-4
+        div
+          form.form-horizontal
+            fieldset
+              .form-group
+                .input-arrondissement
+                  input#textinput.form-control.input-md(method='POST', name='textinput', type='text', placeholder='arrondissement', height='70')
+    .row
+      .bloc-arrondissement.text-center.col-xs-12
+        div
+          span arrondissement?
+    .row
+      .col-xs-4.col-xs-offset-4
+        button
+          | Envoyer

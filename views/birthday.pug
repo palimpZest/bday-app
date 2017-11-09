@@ -1,0 +1,20 @@
+extends layout
+
+block content
+
+    .jumbotron
+      .row
+        .bloc-devine.text-center.col-xs-12
+          .textbloc1
+            span Devine qui fête son anniversaire?
+      .row
+        .input-birthday
+          form.form-horizontal
+            fieldset
+              .form-group
+                .col-md-8.col-md-offset-2
+                  input#textinput.form-control.input-md(method='POST', name='textinput', type='text', placeholder='entre un prénom')
+      .row
+        .col-md-8.col-md-offset-2
+          button#textinput.form-control.input-md(method='POST', name='textinput', type='text', placeholder='arrondissement', height='70')
+            | envoyer
