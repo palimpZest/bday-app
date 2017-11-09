@@ -52,9 +52,10 @@ body {
   background-clip: border-box;
 }
 
+
 .button span{
-background-clip: content-box;
-color: transparent;
+  background-clip: content-box;
+  color: transparent;
 
 }
 
@@ -71,6 +72,7 @@ color: transparent;
   color: black;
   background: white;
   border: none;
+  margin-top: 30px;
 }
 
 .bloc-reponse{
