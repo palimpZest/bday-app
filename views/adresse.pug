@@ -9,11 +9,11 @@ block content
     .row
       .container.col-xs-4
         div
-          form.form-horizontal
+          form.form-horizontal(method='POST')
             fieldset
               .form-group
                 .input-arrondissement
-                  input#textinput.form-control.input-md(method='POST', name='textinput', type='text', placeholder='arrondissement', height='70')
+                  input#textinput.form-control.input-md(name='arrondissement', type='text', placeholder='arrondissement', height='70' )
     .row
       .bloc-arrondissement.text-center.col-xs-12
         div

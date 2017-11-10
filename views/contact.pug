@@ -2,15 +2,17 @@ extends layout
 
 block content
 
-    .container
-      .row
-        .nom-personne.text-center.col-xs-4.col-xs-offset-4
-          .options-home
-            button.typegradient Nom de la personne ou rien
-      .text-center.col-xs-12
-        div
-          iframe.giphy-embed(src='https://giphy.com/embed/l0IxZpEsbQYba4h6E', width='480', height='282', frameborder='0', allowfullscreen='')
-      .row
-        .col-xs-6.col-xs-offset-5
-          button
-            | Contacter
+  each data in personnes 
+
+        .container
+          .row
+            .nom-personne.text-center.col-xs-4.col-xs-offset-4
+              .options-home
+                span.typegradient=data.name
+          .text-center.col-xs-12
+            div
+              iframe.giphy-embed(src='https://giphy.com/embed/l0IxZpEsbQYba4h6E', width='480', height='282', frameborder='0', allowfullscreen='')
+          .row
+            .col-xs-6.col-xs-offset-5
+              button
+                | Contacter

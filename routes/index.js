@@ -58,6 +58,7 @@ router.get('/birthday-result', function(req, res, next) {
   });
 });
 
+/* GET ADRESSE */ /*
 router.get('/adresse', function(req, res, next) {
   console.log(req.body);
   connection.query('SELECT Arrondissement FROM Personnes', function (error, results, fields) {
@@ -74,6 +75,58 @@ router.get('/adresse', function(req, res, next) {
 
 router.get('/contact', function(req, res, next) {
   res.render('contact');
+});*/
+
+/* GET ADRESSE */
+
+router.get('/adresse', function(req, res, next) {
+ res.render('adresse')
+  });
+
+
+
+router.post('/adresse', function(req, res, next) {
+let arrondissement = req.body.arrondissement  
+  connection.query('SELECT * FROM personnes WHERE arrondissement="' + arrondissement +'";',function(error, results, fields){
+    if (error) {
+      console.log(error);
+    }
+  res.redirect('/contact');
+  });
 });
+
+router.get('/contact', function(req, res, next) {
+  res.render('contact')
+   });
+
+
+
+
+
+
+/*
+router.get('/contact/', function(req, res, next) {
+  console.log(req.body);
+  connection.query('SELECT Arrondissement FROM Personnes', function (error, results, fields) {
+    if (error) {
+      console.log(error);
+    }
+    res.render('adresse', {
+      title: 'Adresses Page',
+      actus : results
+    });
+    console.log(results);
+  });
+}); 
+
+router.get('/contact', function(req, res, next) {
+  res.render('contact');
+});
+
+
+*/
+
+
+
 
 module.exports = router;
