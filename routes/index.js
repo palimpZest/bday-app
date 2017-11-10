@@ -28,6 +28,7 @@ router.get('/', function(req, res, next) {
 //   res.render('birthday');
 // });
 
+/* GET BIRTHDAY */
 router.get('/birthday', function(req, res, next) {
   console.log(req.body);
   connection.query('SELECT * FROM Personnes', function (error, results, fields) {
@@ -42,6 +43,7 @@ router.get('/birthday', function(req, res, next) {
   });
 });
 
+/* GET BIRTHDAY-RESULT */
 router.get('/birthday-result', function(req, res, next) {
   console.log(req.body);
   connection.query('SELECT Anniversaire FROM Personnes WHERE Anniversaire = DATE(NOW())', function (error, results, fields) {
