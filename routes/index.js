@@ -95,36 +95,27 @@ let arrondissement = req.body.arrondissement
   });
 });
 
+
+/* GET CONTACT */
+
 router.get('/contact', function(req, res, next) {
   res.render('contact')
    });
 
-
-
-
-
-
-/*
-router.get('/contact/', function(req, res, next) {
-  console.log(req.body);
-  connection.query('SELECT Arrondissement FROM Personnes', function (error, results, fields) {
-    if (error) {
-      console.log(error);
-    }
-    res.render('adresse', {
-      title: 'Adresses Page',
-      actus : results
+   router.get('/contact', function(req, res, next) {
+    let arrondissement = req.body.arrondissement  
+      connection.query('SELECT * FROM personnes WHERE arrondissement="' + arrondissement +'";',function(error, results, fields){
+        if (error) {
+          console.log(error);
+        }
+      res.redirect('/contact');
+      });
     });
-    console.log(results);
-  });
-}); 
-
-router.get('/contact', function(req, res, next) {
-  res.render('contact');
-});
 
 
-*/
+
+
+
 
 
 
