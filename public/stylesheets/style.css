@@ -58,8 +58,6 @@ body {
   -webkit-animation: background 22s ease infinite;
   -moz-animation: background 22s ease infinite;
   animation: background 22s ease infinite;
-
-
 }*/
 
 .typegradient {
@@ -82,7 +80,9 @@ body {
 }
 
 
-
+.options-home span {
+  font-size: 30px;
+}
 
 
 .button span{
@@ -156,7 +156,8 @@ body {
   border-radius: 10px;
   font-weight: 500;
   font-size: 40px;
-  width:500px;
+  width:500px;    height: 75px;
+    line-height: 75px;
   /*height: 70px;*/
   color: black;
   background:transparent;
@@ -216,8 +217,6 @@ body {
   height: 70px;
 }
 
-
-
 /* CLASSES BIRTHDAY-RESULT */
 
 .bloc-reponse {
@@ -228,10 +227,9 @@ body {
   font-weight: 500;
   font-size: 2em;
   width:400px;
-  height: 100px;
+  height: 75px;
   line-height: 75px;
   background: white;
-  color: black;
   border: none;
   padding: 20 0;
 }
@@ -239,12 +237,12 @@ body {
 .bloc-nom {
   border: none;
   border-radius: 10px;
-  margin-bottom: 10%;
+  margin-bottom: 90px;
   margin-top: -100px;
   font-weight: 500;
   font-size: 2em;
   width:400px;
-  height: 100px;
+  height: 75px;
   line-height: 75px;
   background: white;
   color: black;
@@ -252,13 +250,10 @@ body {
   padding: 20 0;
 }
 
-.gif{
-
-margin-top: -70px;
-
-
-
+.gif {
+  margin-top: -70px;
 }
+
 .textbloc1{
   text-align: center;
 }
@@ -298,22 +293,22 @@ margin-top: -70px;
 /* CLASSES BIRTHDAY-RESULT */
 
 .nom-personne {
-  border: none;
   border-radius: 10px;
-  margin-bottom: 10%;
-  margin-top: 50px;
   font-weight: 500;
   font-size: 40px;
-  width:400px;
-  height: 100px;
-  line-height: 35px;
-  background: transparent;
-  color: black;
+  height: 75px;
+  line-height: 75px;
+  background: white;
   border: none;
-  padding: 20 0;
+  width: 600px;
+  margin-bottom: 50px;
 }
 
-.bloc-nom {
+.contact-button {
+  margin-top: 30px;
+}
+
+/*.bloc-nom {
   border: none;
   border-radius: 10px;
   margin-bottom: 10%;
@@ -328,10 +323,6 @@ margin-top: -70px;
   border: none;
   padding: 20 0;
 }
-
-
-
-
 
 .bloc-arrondissement {
   line-height: 150px;
@@ -350,32 +341,4 @@ margin-top: -70px;
   border-radius: 10px;
   border: none;
   height: 70px;
-}
-
-
-
- *
- * Navigation
- *
- */
-
-
-/*
- *
- * Header
- *
- */
-
-
-/*
- *
- * Welcome Section
- *
- */
-
-
- /*
- *
- *  Footer
- *
- */
+}*/
