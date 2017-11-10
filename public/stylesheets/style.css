@@ -50,7 +50,40 @@ body {
   border: none;
   padding: 20 0;
   background-clip: border-box;
+
 }
+
+/*.typegradient  {
+  background: linear-gradient(270deg, #ff003b,#a716ef, #1661ef);
+  background-size: 600% 600%;
+  -webkit-animation: background 22s ease infinite;
+  -moz-animation: background 22s ease infinite;
+  animation: background 22s ease infinite;
+
+
+}*/
+
+.typegradient {
+  animation : colorchange  22s ease infinite; 
+}
+
+@keyframes colorchange {
+  0% {
+    color : #ff003B;
+  }
+  50% {
+     color : #a716ef;   
+  }
+  100% {
+        color : #1661ef;
+  }
+ /* 100%{
+    color : #ff003B;
+  } */
+}
+
+
+
 
 
 .button span{
