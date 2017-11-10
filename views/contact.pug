@@ -4,9 +4,14 @@ block content
 
     .container
       .row
-        .nom-personne.text-center.col-xs-4.col-xs-offset-4
+        .logo-wild.text-center.col-xs-12
           .options-home
-            button.typegradient Nom de la personne ou rien
+            a(href='/')
+              img(src='images/logo_orange_pastille.png', alt='', height='100')
+      .row
+        .nom-personne.text-center.col-xs-6.col-xs-offset-4
+          .options-home
+            span.typegradient Nom de la personne ou rien
       .text-center.col-xs-12
         div
           iframe.giphy-embed(src='https://giphy.com/embed/l0IxZpEsbQYba4h6E', width='480', height='282', frameborder='0', allowfullscreen='')
