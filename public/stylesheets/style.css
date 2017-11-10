@@ -58,8 +58,6 @@ body {
   -webkit-animation: background 22s ease infinite;
   -moz-animation: background 22s ease infinite;
   animation: background 22s ease infinite;
-
-
 }*/
 
 .typegradient {
@@ -82,7 +80,9 @@ body {
 }
 
 
-
+.options-home span {
+  font-size: 30px;
+}
 
 
 .button span{
@@ -281,23 +281,19 @@ body {
 
 /* CLASSES BIRTHDAY-RESULT */
 
-/*.nom-personne {
-  border: none;
+.nom-personne {
   border-radius: 10px;
-  margin-bottom: 10%;
-  margin-top: 50px;
   font-weight: 500;
   font-size: 40px;
-  width:400px;
-  height: 100px;
-  line-height: 35px;
-  background: transparent;
-  color: black;
+  height: 75px;
+  line-height: 75px;
+  background: white;
   border: none;
-  padding: 20 0;
+  width: 600px;
+  margin-bottom: 30px;
 }
 
-.bloc-nom {
+/*.bloc-nom {
   border: none;
   border-radius: 10px;
   margin-bottom: 10%;
