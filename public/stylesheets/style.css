@@ -64,7 +64,7 @@ body {
 }*/
 
 .typegradient {
-  animation : colorchange  22s ease infinite; 
+  animation : colorchange  22s ease infinite;
 }
 
 @keyframes colorchange {
@@ -72,7 +72,7 @@ body {
     color : #ff003B;
   }
   50% {
-     color : #a716ef;   
+     color : #a716ef;
   }
   100% {
         color : #1661ef;
@@ -178,7 +178,6 @@ body {
   font-weight: 500;
   font-size: 2em;
   width:500px;
-  height: 150px;
   line-height: 75px;
   background: white;
   color: black;
