@@ -26,6 +26,8 @@ block content
         div
           iframe#forecast_embed(frameborder='0', height='245', width='100%', src='//forecast.io/embed/#lat=42.3583&lon=-71.0603&name=Paris&color=#00aaff&font=Georgia&units=uk')
       .row
-        .col-xs-12
+        .col-xs-8.col-xs-offset-2
           .options-home
-            .gmap Googoole places
+            #map.googlemap
+              script(src='/javascript/script.js')
+              script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBuBTqY9TlPy2lq8oztWt3TBqu74Z2m1mw&callback=initMap')
