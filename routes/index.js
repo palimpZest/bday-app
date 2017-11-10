@@ -85,38 +85,25 @@ router.get('/adresse', function(req, res, next) {
 
 
 
-router.post('/adresse', function(req, res, next) {
-let arrondissement = req.body.arrondissement  
-  connection.query('SELECT * FROM personnes WHERE arrondissement="' + arrondissement +'";',function(error, results, fields){
-    if (error) {
-      console.log(error);
-    }
-  res.redirect('/contact');
+
+  router.get('/contact', function (req,res){
+    res.redirect('/adresse');
   });
-});
 
 
-/* GET CONTACT */
-
-router.get('/contact', function(req, res, next) {
-  res.render('contact')
-   });
-
-   router.get('/contact', function(req, res, next) {
-    let arrondissement = req.body.arrondissement  
-      connection.query('SELECT * FROM personnes WHERE arrondissement="' + arrondissement +'";',function(error, results, fields){
+   router.post('/contact', function(req, res, next) {
+    let arrondissement = req.body.arrondissement 
+    console.log(arrondissement); 
+    console.log(req.body); 
+      connection.query('SELECT * FROM Personnes WHERE Arrondissement=?',[arrondissement],function(error, results, fields){
+        console.log(results);
         if (error) {
           console.log(error);
         }
-      res.redirect('/contact');
+        res.render('contact',{personnes:results})
+        
       });
     });
-
-
-
-
-
-
 
 
 

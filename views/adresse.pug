@@ -14,17 +14,17 @@ block content
     .row
       .container.col-xs-4
         div
-          form.form-horizontal(method='POST')
+          form.form-horizontal(method='POST' action='/contact')
             fieldset
               .form-group
                 .input-arrondissement
-                  input#textinput.form-control.input-md(method='POST', name='textinput', type='text', placeholder='Ex: 7', height='70')
-    .row
-      .bloc-arrondissement.text-center.col-xs-12
-        div
-          span.typegradient ARRONDISSEMENT?
-    .row
-      .col-xs-4.col-xs-offset-4
-        a(href='/contact')
-          button
-            | Envoyer
+                  input#textinput.form-control.input-md(name='arrondissement', type='text', placeholder='Ex: 7', height='70' required)
+            .row
+              .bloc-arrondissement.text-center.col-xs-12
+                div
+                  span.typegradient ARRONDISSEMENT?
+              .row
+                .col-xs-12
+                  a(href='/contact')
+                    button.form-control.col-xs-6.col-xs-offset-12
+                      | Envoyer
